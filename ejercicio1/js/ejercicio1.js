@@ -1,7 +1,4 @@
-
 var texto = prompt("Escribe un texto:");
-texto = separaPalabras(texto);
-console.log(giraPalabras(texto));
 
     while (texto != "ESC" && texto != "esc") {
 
@@ -33,9 +30,11 @@ console.log(giraPalabras(texto));
             let textoInvertido = textoSeparado.reverse();
 
             let textoJunto = textoInvertido.join("");
-            
+
             textoFinal += textoJunto + " ";
         }
 
         return textoFinal;
     }
+
+console.log(giraPalabras(separaPalabras(texto)));
