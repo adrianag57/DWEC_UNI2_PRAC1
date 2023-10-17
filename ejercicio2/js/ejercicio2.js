@@ -16,7 +16,7 @@ var decimos = generaNAleatorios(cantidad, min, max);
 
 while (!encontrado && intentosEncontrar < 99999) {
 
-    let numero = generaAleatorio(0, 99999);
+    const numero = generaAleatorio(0, 99999);
     intentosEncontrar++;
 }
 
@@ -25,7 +25,10 @@ if (decimos.includes(numero)) {
     encontrado = true;
 }
 
+if (encontrado) {
 
+    alert(intentosEncontrar);
+}
 
 function generaAleatorio(min, max) { 
 
